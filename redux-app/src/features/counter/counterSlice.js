@@ -4,6 +4,7 @@ import { fetchCount } from './counterAPI';
 const initialState = {
   value: 0,
   status: 'idle',
+  name:""
 };
 
 // The function below is called a thunk and allows us to perform async logic. It
@@ -31,13 +32,16 @@ export const counterSlice = createSlice({
       // which detects changes to a "draft state" and produces a brand new
       // immutable state based off those changes
       state.value += 1;
+      state.name=`Value increasing by ${1}`
     },
     decrement: (state) => {
       state.value -= 1;
+      state.name=`Value decreasing by ${1}`
     },
     // Use the PayloadAction type to declare the contents of `action.payload`
     incrementByAmount: (state, action) => {
       state.value += action.payload;
+      state.name=`Value decreasing by ${action.payload}`
     },
   },
   // The `extraReducers` field lets the slice handle actions defined elsewhere,

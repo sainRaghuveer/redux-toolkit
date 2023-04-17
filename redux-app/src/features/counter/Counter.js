@@ -15,6 +15,11 @@ export function Counter() {
      console.log(store)
     return  store.counter.value
   });
+
+  const name = useSelector((store)=>{
+    console.log(store)
+   return  store.counter.name
+ });
   const dispatch = useDispatch();
   const [incrementAmount, setIncrementAmount] = useState('2');
 
@@ -22,6 +27,7 @@ export function Counter() {
 
   return (
     <div>
+      <h1>{name}</h1>
       <div className={styles.row}>
         <button
           className={styles.button}
