@@ -11,15 +11,15 @@ import {
 import styles from './Counter.module.css';
 
 export function Counter() {
-  const count = useSelector((store)=>{
-     console.log(store)
-    return  store.counter.value
+  const count = useSelector((store) => {
+    console.log(store)
+    return store.counter.value
   });
 
-  const name = useSelector((store)=>{
+  const name = useSelector((store) => {
     console.log(store)
-   return  store.counter.name
- });
+    return store.counter.name
+  });
   const dispatch = useDispatch();
   const [incrementAmount, setIncrementAmount] = useState('2');
 
