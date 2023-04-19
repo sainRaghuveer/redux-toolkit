@@ -12,7 +12,7 @@ export function Auth() {
     return store.counter.name
   });
   const dispatch = useDispatch();
-  const [incrementAmount, setIncrementAmount] = useState('2');
+  const [incrementAmount, setIncrementAmount] = useState('4');
 
   const incrementValue = Number(incrementAmount) || 0;
 
