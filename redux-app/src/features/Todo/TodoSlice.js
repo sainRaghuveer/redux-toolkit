@@ -20,7 +20,7 @@ const initialState = {
 // );
 
 export const counterSlice = createSlice({
-  name: 'counter',
+  name: 'todo',
   initialState,
   // The `reducers` field lets us define reducers and generate associated actions
   reducers: {
