@@ -2,7 +2,9 @@ import React from 'react'
 
 const Todoinput = () => {
   return (
-    <div>Todoinput</div>
+    <div>
+        <input type='text' placeholder='Add todo'/>
+    </div>
   )
 }
 
