@@ -4,6 +4,7 @@ const Todoinput = () => {
   return (
     <div>
         <input type='text' placeholder='Add todo'/>
+        <button>Add</button>
     </div>
   )
 }
