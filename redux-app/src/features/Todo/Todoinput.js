@@ -1,11 +1,16 @@
 import React, { useState } from 'react'
 
 const Todoinput = () => {
+  
   const [todo, setTodo] = useState("");
+
+const handleTodo = () => {
+
+}
   return (
     <div>
         <input type='text' placeholder='Add todo' value={todo} onChange={(e)=>setTodo(e.target.value)}/>
-        <button>Add</button>
+        <button onClick={handleTodo}>Add</button>
     </div>
   )
 }
