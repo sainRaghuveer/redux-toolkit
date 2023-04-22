@@ -15,7 +15,8 @@ export const counterSlice = createSlice({
       // doesn't actually mutate the state because it uses the Immer library,
       // which detects changes to a "draft state" and produces a brand new
       // immutable state based off those changes
-      state.value += 1;
+      console.log(action.payload)
+      state.todo.push(action.payload)
       state.name = `Value increasing by ${1}`
     },
     decrement: (state) => {
