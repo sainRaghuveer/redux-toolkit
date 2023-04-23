@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { add } from "./TodoSlice"
+import  add  from "./TodoSlice"
 import { useDispatch } from 'react-redux';
 
 const Todoinput = () => {
@@ -14,7 +14,7 @@ const Todoinput = () => {
       "title": todo,
       "status": false
     }
-    dispatch(todos);
+    dispatch(add(todos));
     setTodo("");
   }
   return (
