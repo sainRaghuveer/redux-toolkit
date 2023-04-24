@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import  {add}  from "./TodoSlice"
 import { useDispatch } from 'react-redux';
+import uniqid from 'uniqid';
 
 const Todoinput = () => {
 
@@ -10,7 +11,7 @@ const Todoinput = () => {
   const handleTodo = () => {
     console.log("Raghuveer")
     let todos = {
-      "id":1,
+      "id":uniqid(),
       "title": todo,
       "status": false
     }
