@@ -17,7 +17,6 @@ export const counterSlice = createSlice({
       // immutable state based off those changes
       console.log(action.payload)
       state.todo.push(action.payload)
-      state.name = `Value increasing by ${1}`
     },
     decrement: (state) => {
       state.value -= 1;
@@ -43,7 +42,7 @@ export const counterSlice = createSlice({
   },
 });
 
-export const { increment, decrement, incrementByAmount } = counterSlice.actions;
+export const { add, decrement, incrementByAmount } = counterSlice.actions;
 
 // The function below is called a selector and allows us to select a value from
 // the state. Selectors can also be defined inline where they're used instead of
