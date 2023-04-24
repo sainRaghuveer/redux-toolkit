@@ -18,8 +18,7 @@ const Todo = () => {
           data.length > 0 && data.map((el, index)=>{
             return (
               <div key={index}>
-                <p>{el.title}</p>
-                <p>{el.status ? "Pending" : "Completed"}</p>
+                <p>{el.title} --------{el.status ? "Pending" : "Completed"}</p>
               </div>
             )
           })
