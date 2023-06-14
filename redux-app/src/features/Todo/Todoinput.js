@@ -9,7 +9,6 @@ const Todoinput = () => {
   const dispatch = useDispatch();
 
   const handleTodo = () => {
-    console.log("Raghuveer")
     let todos = {
       "id":uniqid(),
       "title": todo,
